@@ -1,0 +1,415 @@
+
+    :root {
+      --bg-color: #ffffff;
+      --snd-bg-color: #c8fcc8;
+      --text-color: #000000;
+      --main-color: #008000;
+      --accent-color: #cf5b06;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+
+     body {
+      background: var(--bg-color);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+    }
+
+    section {
+      padding: 100px 10% 80px;
+    }
+/* Force your header style to override Bootstrap */
+.header {
+  background-color:var(--main-color); /* brand green */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.logo,
+.logo:hover,
+.logo:focus,
+.logo:active {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.logo span {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #cf5b06 !important; /* brand orange */
+}
+
+
+    .home {
+      background: var(--bg-color);
+      text-align: center;
+      padding: 18%;
+    }
+    .home {
+  position: relative;
+  background: url('images/homepage-concept-with-search-bar.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 18% 10%;
+  z-index: 1;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  z-index: -1;
+}
+
+
+    .home h1 {
+      font-size: 7rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+.home h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+    .home p {
+      font-size: 1.6rem;
+      margin: 1rem 0;
+      line-height: 1.8;
+    }
+
+    .home span {
+      color: var(--main-color);
+      font-weight: 600;
+    }
+
+    .about {
+      background-color: var(--bg-color);
+       text-align: center;
+      padding: 4%;
+      
+    }
+    
+       .seo-benefits-box {
+      background-color: var(--accent-color);
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      margin-top: 100px;
+      text-align: center;
+    }
+.seo-benefits-box h1{
+   font-size: 3rem;
+      color: #fff;
+      line-height: 1.6;
+}
+    .benefits-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .benefit-item {
+      background-color: #fff;
+      padding: 40px 25px;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 500px;
+    }
+
+    .benefit-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-style {
+      color: var(--main-color);
+      margin-bottom: 15px;
+      font-size: 2rem;
+      transition: color 0.3s ease;
+    }
+
+    .benefit-item:hover .icon-style {
+      color: var(--accent-color);
+    }
+
+    .benefit-item h5 {
+      font-size: 1.5rem;
+      margin: 15px 0 10px;
+      font-weight: 600;
+    }
+
+    .benefit-item p {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+
+.about h3{
+    font-size: 4rem;
+    line-height: 1.8;
+}
+.about p {
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-img img,
+      .sample {
+      background-color: var(--bg-color);
+       text-align: center;
+      padding: 15%;
+    }
+    .sample img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--main-color);
+    }
+
+  .video {
+      background-color: var(--snd-bg-color);
+       text-align: center;
+      padding: 5%;
+    }
+    .video h1{
+         font-size: 5rem;
+      color: var(--accent-color);
+      
+      
+      
+    }
+.video h3 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fff;
+ 
+}
+.underlined {
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 4px;
+  color: #000000;
+}
+
+.video p{
+    font-size: 1.4rem;
+ 
+}
+    .video iframe {
+      width: 1300px;
+      height: 800px;
+      border-radius: 10px;
+    }
+    .media-section {
+      background: #ffffffdd;
+      border-radius: 16px;
+      padding: 30px 40px;
+      margin: 20px 0;
+      width: 300%;
+      max-width: 1400px;
+      max-height: 900px ;
+      box-shadow: 0 8px 20px rgba(42, 42, 114, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .media-section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(42, 42, 114, 0.25);
+    }
+        .sample {
+      background-color: var(--bg-color);
+       text-align: center;
+      padding: 5%;
+    }
+    .sample img {
+      max-width: 150%;
+      border-radius: 10px;
+            max-width: 1400px;
+      max-height: 600px ;
+      
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+     .sample h2 {
+       font-size: 5.5rem;
+  font-weight: 700;
+ 
+    }
+    .sample h3 {
+       font-size: 4rem;
+  font-weight: 700;
+ 
+    }
+  .sample h3 {
+       font-size: 4rem;
+  font-weight: 700;
+ 
+    }
+      .sample p {
+       font-size: 1.2rem;
+  font-weight: 700;
+ 
+    }
+    .heading {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--main-color);
+    }
+
+    .btn-download {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 15px 30px;
+      background: var(--accent-color);
+      color: white;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .btn-download:hover {
+      background: #b34d05;
+    }
+/* Contact Section */
+.contact {
+  background-color: var(--snd-bg-color); /* soft background */
+  padding: 60px 0;
+}
+
+.contact .heading {
+  font-size: 3rem;
+  font-weight: 00;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 1000px; /* larger size */
+  margin: 0 auto; /* center horizontally */
+  background: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid var(--main-color);
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 104, 55, 0.2);
+}
+
+.contact-form button {
+  display: block;       /* allows centering */
+  margin: 0 auto;       /* centers the button */
+  background: var(--main-color);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--accent-color);
+}
+footer {
+  background: var(--text-color); /* brand green */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: relative; /* change to fixed if you want it stuck at bottom */
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p a {
+  color: var(--accent-color); /* brand orange for links */
+  text-decoration: none;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
